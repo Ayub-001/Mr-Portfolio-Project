@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ae33aecf7e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo3.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-list" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Software Engineer</p>
+                    <h1>Hi, I'm <span>Ayub</span><br>Dev From Kenya</h1>
+                </div>
+            </div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/my work image.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hi, I’m Ayub — a passionate and driven software engineer with a strong focus on building elegant, efficient, and user-centered digital solutions. I enjoy turning ideas into real-world applications through clean code, thoughtful design, and continuous learning.
+
+                        I thrive in environments where innovation meets purpose. Whether I’m developing interactive front-end interfaces, crafting solid backend systems, or exploring new technologies, I approach every project with curiosity and a commitment to excellence.
+
+                        Beyond coding, I value growth, collaboration, and creating meaningful experiences through technology. My goal is to build products that not only function well, but also make an impact.
+
+                        Let’s build something amazing together.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/app interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024</span><br>Building Android/ios apps</li>
+                            <li><span>2024</span><br>Designing app interfaces</li>
+                            <li><span>2025</span><br>software Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - 2024</span><br>App and Games development training at Maliyo Gaming bootcamp</li>
+                            <li><span>2025</span><br>Software engineering training at Moringa School</li>
+                            <li><span>2025</span><br>Took part in a hackathon</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="services">
+        <div class="cointainer">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Web Development</h2>
+                    <p>
+                        I build fast, responsive, and user-friendly websites using modern technologies and clean, maintainable code.
+                         efficient databases and integrate them into applications for reliable data handling and performance.
+                    </p>
+                    <a href="#">Learn more</a>
+
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                      <h2>Frontend Engineering</h2>
+                    <p>
+                        I develop intuitive interfaces with a focus on usability, performance, and seamless user experience. 
+                        ent databases and integrate them into applications for reliable data handling and performance.
+                    </p>
+                    <a href="#">Learn more</a>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-file-code"></i>
+                     <h2>Backend Development</h2>
+                    <p>
+                        I design and implement secure, scalable server-side systems and RESTful APIs for robust application functionality.
+                    </p>
+                    <a href="#">Learn more</a>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Implementation</h2>
+                    <p>
+                        I bring designs to life with pixel-perfect detail, ensuring visual consistency and smooth interaction across devices.
+                    </p>
+                    <a href="#">Learn more</a>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                     <h2> Database Design & Integration</h2>
+                    <p>
+                        I create structured, efficient databases and integrate them into applications for reliable data handling and performance.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/download (1).png" alt="">
+                    <div class="layer">
+                        <h3>Expense Tracker App</h3>
+                        <p>
+                            A complete React application for managing expenses.
+                             <ul>
+                                <li>A searchable and sortable expenses table covering full browser width.</li>
+                                <li>Form for adding new expenses and updating the UI instantly.</li>
+                                <li>Ability to delete records and manage state effectively using React hooks.</li>
+                            </ul>
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                 <div class="work">
+                    <img src="images/download.png" alt="">
+                    <div class="layer">
+                        <h3>Event Platform Project</h3>
+                        <p>
+                            A web application for showcasing event services with dynamic features.
+                            Features built:
+                            <ul>
+                                <li>Testimonials section with full CRUD capability via JSON Server.</li>
+                                <li> Booking form connected to backend for persistent storage.</li>
+                                <li>Animated slideshow for services using JavaScript timers.</li>
+                                <li>Live chat widget (chatbot version).</li>
+                                <li>Interactive pricing calculator for client quotes.</li>
+                            </ul>
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div> <div class="work">
+                    <img src="images/Screenshot 2025-11-28 093323.png" alt="">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>
+                           A personal portfolio site showcasing skills, projects, and contact info.
+                             <ul>
+                                <li>Custom branding and responsive layout.</li>
+                                <li>Interactive hero section and portfolio slider.</li>
+                                <li>Optimized images and animations for performance.</li>
+                            </ul>
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-message"></i> ayubndungu920@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +254110296716</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="images/my cv.pdf" download class="btn" btn2>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2"> Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                © 2025 Ayub. All rights reserved.
+            </p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzqzClxnox613ghvKm17GsgalMbJOWpQAHptWi7O90J_rBdQo_s65ncj6g_UlTfCm5NUA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+</body>
+</html>
